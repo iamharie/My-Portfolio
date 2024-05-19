@@ -207,7 +207,7 @@ th {
 .contact-section h2 {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .contact-section .group {
   display: flex;
@@ -215,7 +215,8 @@ th {
 }
 .contact-section .group .text {
   flex: 3;
-  margin-top: 20px;
+
+  /* margin-top: 3px; */
 }
 
 .contact-section .group form {
@@ -250,6 +251,9 @@ th {
 }
 .contact-section .phone .contact {
   height: 28px;
+}
+.contact-section .phone .contact:hover {
+  background-color: blue;
 }
 
 /* Section: Footer */
@@ -328,4 +332,7 @@ footer .LN {
   .contact-section .group .text {
     margin-bottom: 1px;
   }
+  /* .contact-section .group .text {
+    margin-bottom: -60px;
+  } */
 }
