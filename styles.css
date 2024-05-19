@@ -328,9 +328,12 @@ footer .LN {
     padding: 0 20px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 470px) {
   .contact-section .group .text {
     margin-bottom: 1px;
+  }
+  nav .right a {
+    margin: 0 2px;
   }
   /* .contact-section .group .text {
     margin-bottom: -60px;
