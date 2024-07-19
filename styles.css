@@ -55,12 +55,14 @@ nav .right a span {
 } */
 /* Slide in effect */
 .sec {
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.8s, opacity 1s;
 }
 
 .section--hidden {
   opacity: 0;
-  transform: translateX(30rem);
+  /* transform: translateX(30rem); */
+
+  transform: translateY(20rem);
 }
 /* Section 1: */
 .hero-section {
@@ -343,6 +345,10 @@ footer .LN {
   }
 }
 @media (max-width: 470px) {
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(15rem);
+  }
   .contact-section .group .text {
     margin-bottom: 1px;
   }
