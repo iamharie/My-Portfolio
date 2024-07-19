@@ -53,6 +53,15 @@ nav .right a span {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
 } */
+/* Slide in effect */
+.sec {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateX(30rem);
+}
 /* Section 1: */
 .hero-section {
   display: flex;
@@ -61,6 +70,7 @@ nav .right a span {
   padding: 0 50px;
   margin: 50px 0;
   margin-bottom: 100px;
+
   gap: 40px;
 }
 

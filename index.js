@@ -18,3 +18,29 @@ console.log(section2);
 //   e.preventDefault();
 //   if (window.scrollY > initialCoords.top) nav.classList.add("sticky");
 // });
+
+//intersectionObserver
+const allSection = document.querySelectorAll(".sec");
+console.log(allSection);
+
+const callbackFun = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const options = {
+  root: null,
+  threshold: 0.3,
+};
+const sectionObserver = new IntersectionObserver(callbackFun, options);
+
+//Observing the section
+
+allSection.forEach((sec) => {
+  sectionObserver.observe(sec);
+  console.log(sec);
+  sec.classList.add("section--hidden");
+});
