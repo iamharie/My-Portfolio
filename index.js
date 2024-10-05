@@ -46,3 +46,15 @@ allSection.forEach((sec) => {
 });
 
 //Carousel
+
+//Pop-up
+const popUp = document.getElementById("pop-up");
+const popupButton = document.getElementById("popup-btn");
+
+const timer = setTimeout(() => {
+  popUp.showModal();
+}, 5000);
+
+popupButton.addEventListener("click", () => {
+  popUp.close();
+});

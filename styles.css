@@ -3,11 +3,11 @@
   --link-color: rgb(129, 129, 207);
   --background-color: white;
 }
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -372,3 +372,10 @@ footer .LN {
 
 /* Testimony */
 /* SECTION 3: Testimony */
+
+/* Pop-up dialog */
+
+#popup-btn {
+  background-color: none;
+  border: none;
+}
