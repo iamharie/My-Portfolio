@@ -30,6 +30,13 @@ nav {
   height: 80px;
 }
 
+/* additional feature */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+}
+
 nav .left a {
   color: var(--text-color);
   font-size: 22px;
@@ -377,5 +384,11 @@ footer .LN {
 
 #popup-btn {
   background-color: none;
+  border: none;
+}
+
+#popup-btn:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
   border: none;
 }
