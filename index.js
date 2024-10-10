@@ -11,21 +11,21 @@ button.addEventListener("click", function () {
 const nav = document.querySelector(".nav");
 const section2 = document.querySelector(".skills-section");
 const initialCoords = section2.getBoundingClientRect();
-console.log(initialCoords);
-console.log(section2);
+// console.log(initialCoords);
+// console.log(section2);
 
 // window.addEventListener("scroll", function (e) {
 //   e.preventDefault();
 //   if (window.scrollY > initialCoords.top) nav.classList.add("sticky");
 // });
 
-//intersectionObserver
+// intersectionObserver;
 const allSection = document.querySelectorAll(".sec");
-console.log(allSection);
+// console.log(allSection);
 
 const callbackFun = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("section--hidden");
   observer.unobserve(entry.target);
@@ -37,10 +37,24 @@ const options = {
 };
 const sectionObserver = new IntersectionObserver(callbackFun, options);
 
-//Observing the section
+// Observing the section
 
 allSection.forEach((sec) => {
   sectionObserver.observe(sec);
-  console.log(sec);
+  // console.log(sec);
   sec.classList.add("section--hidden");
+});
+
+//Carousel
+
+//Pop-up
+const popUp = document.getElementById("pop-up");
+const popupButton = document.getElementById("popup-btn");
+
+const timer = setTimeout(() => {
+  popUp.showModal();
+}, 2500);
+
+popupButton.addEventListener("click", () => {
+  popUp.close();
 });

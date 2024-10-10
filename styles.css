@@ -3,11 +3,11 @@
   --link-color: rgb(129, 129, 207);
   --background-color: white;
 }
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -28,6 +28,13 @@ nav {
   align-items: center;
   padding: 0 50px;
   height: 80px;
+}
+
+/* additional feature */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
 }
 
 nav .left a {
@@ -110,6 +117,14 @@ nav .right a span {
 }
 
 /* SECTION 2: SKILLS */
+.list {
+  margin-top: 20px;
+}
+.list li {
+  margin-top: 20px;
+  list-style: square;
+}
+
 .skills-section {
   padding: 0 50px;
   margin: 100px;
@@ -153,6 +168,7 @@ nav .right a span {
   font-size: 18px;
 }
 /* Section 3: Project-section */
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -164,8 +180,8 @@ nav .right a span {
   width: 70%;
   margin: 0 auto;
   padding: 1px 0;
-  margin-top: -30px;
-  margin-bottom: -15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .pro h2 {
   font-size: 35px;
@@ -182,6 +198,7 @@ nav .right a span {
 }
 .col-sm-4 {
   text-align: center;
+  box-shadow: 0px 0px 0px 0px black;
 }
 .col-sm-4 h2 {
   font-size: 25px;
@@ -358,4 +375,20 @@ footer .LN {
   /* .contact-section .group .text {
     margin-bottom: -60px;
   } */
+}
+
+/* Testimony */
+/* SECTION 3: Testimony */
+
+/* Pop-up dialog */
+
+#popup-btn {
+  background-color: none;
+  border: none;
+}
+
+#popup-btn:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
 }
