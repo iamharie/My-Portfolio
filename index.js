@@ -53,7 +53,7 @@ const popupButton = document.getElementById("popup-btn");
 
 const timer = setTimeout(() => {
   popUp.showModal();
-}, 5000);
+}, 2500);
 
 popupButton.addEventListener("click", () => {
   popUp.close();
